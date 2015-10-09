@@ -20,6 +20,6 @@ if(!$account) {
 $subscriptionName = "Visual Studio Premium with MSDN"
 Select-AzureSubscription –SubscriptionName $subscriptionName
 
-# start the sql server backend service
+# start the cloud service
 $cloudServiceName = "iiswebsvc" 
 StartOrStop-VMs -AzureSubscriptionName $subscriptionName -TargetService $cloudServiceName -RequestedAction "Stop"
